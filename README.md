@@ -20,14 +20,14 @@ Done
 
 reference: https://medium.com/geekculture/deep-learning-gpu-setup-from-scratch-75f730c49c01
 
-======================================================================================================
+---
 
 Install Docker
 Install nvidia container toolkit - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit
 
 keep --gpus all in docker run command
 
-======================================================================================================
+---
 
 solve /localhome issue
 
@@ -50,4 +50,4 @@ $ sudo cp passwd.new /etc/passwd
 
 Log out and back in again, and snap will work from the freshly mounted home location. If you run into difficulties, copy the backup passwd file to /etc/passwd.
 
-======================================================================================================
+---
