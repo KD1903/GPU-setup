@@ -36,6 +36,7 @@ There are two steps to bind mount a home directory to a different location:
 the bind mount: create the mount point and run the mount command:
 $ sudo mkdir -p /home/$USER
 $ sudo mount --bind <original-home-location> /home/$USER
+Example $  sudo mount --bind /localhome/local-dmukeshbhai/ /home/local-dmukeshbhai/
 
 edit /etc/passwd: backup passwd and edit the home location for your user:
 $ cp /etc/passwd passwd.backup
@@ -49,5 +50,9 @@ $ awk -vold=$"OLD_HOME" -vnew=$"/home/$USER" -F: ' BEGIN {OFS = ":"} \
 $ sudo cp passwd.new /etc/passwd
 
 Log out and back in again, and snap will work from the freshly mounted home location. If you run into difficulties, copy the backup passwd file to /etc/passwd.
+
+---
+
+add mocro k8s into sudoers group if getting permission denied error in enable command
 
 ---
