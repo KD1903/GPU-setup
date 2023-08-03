@@ -1,20 +1,29 @@
 steps for setting GPU for DeepLearning
 
 Ubuntu 20.04, RTX A6000
+Ubuntu 20.04, A40
+Ubuntu 20.04, A30
 
 1. Install NVIDIA display driver - 535.34
 	Download .run file from nvidia drivers site and install it
+	
+	chmod +x some-app.run
+	sudo ./some-app.run
 
 2. Install CUDA - 11.7
 	https://developer.nvidia.com/cuda-downloads
 	
 	set path in ~/.bashrc
-		export PATH=$PATH:/usr/local/cuda/bin
-		export CUDADIR=/usr/local/cuda
-		export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+export PATH=$PATH:/usr/local/cuda/bin
+export CUDADIR=/usr/local/cuda
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+
+	source ~/.bashrcs
 
 3. Install cuDNN - 8.9
 	https://developer.nvidia.com/rdp/cudnn-download
+	
+	sudo dpkg -i cudnn.deb
 
 Done
 
@@ -22,10 +31,15 @@ reference: https://medium.com/geekculture/deep-learning-gpu-setup-from-scratch-7
 
 ---
 
-Install Docker
-Install nvidia container toolkit - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit
+Install Docker - https://docs.docker.com/engine/install/ubuntu/
+Install nvidia container toolkit - # https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#setting-up-nvidia-container-toolkit
+								 - https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#setting-up-nvidia-container-toolkit
 
 keep --gpus all in docker run command
+
+add docker in sudoers group
+$sudo groupadd docker
+$sudo usermod -aG docker $USER
 
 ---
 
