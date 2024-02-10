@@ -1,4 +1,4 @@
-Steps for setting GPU for DeepLearning
+# Steps for setting GPU for DeepLearning
 
 Ubuntu 20.04, RTX A6000
 Ubuntu 20.04, A40
