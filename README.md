@@ -1,8 +1,9 @@
 # Steps for setting GPU for DeepLearning
 
-Ubuntu 20.04, RTX A6000
-Ubuntu 20.04, A40
-Ubuntu 20.04, A30
+Tested on,
+- Ubuntu 20.04, RTX A6000  
+- Ubuntu 20.04, A40  
+- Ubuntu 20.04, A30  
 
 1. Install NVIDIA display driver - 535.34
 	Download .run file from nvidia drivers site and install it
