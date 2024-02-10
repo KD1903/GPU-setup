@@ -43,7 +43,7 @@ $sudo usermod -aG docker $USER
 
 ---
 
-solve /localhome issue
+### solve /localhome issue
 
 There are two steps to bind mount a home directory to a different location:
 
