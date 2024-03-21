@@ -3,28 +3,35 @@
 Tested on,
 - Ubuntu 20.04, RTX A6000  
 - Ubuntu 20.04, A40  
-- Ubuntu 20.04, A30  
+- Ubuntu 20.04, A30
+- Ubuntu 20.04, RTX 3050 laptop GPU
 
 1. Install NVIDIA display driver - 535.34
 	Download .run file from nvidia drivers site and install it
-	
+
+ 	```
 	chmod +x some-app.run
 	sudo ./some-app.run
+	```
 
 2. Install CUDA - 11.7
 	https://developer.nvidia.com/cuda-downloads
 	
 	set path in ~/.bashrc
+```
 export PATH=$PATH:/usr/local/cuda/bin
 export CUDADIR=/usr/local/cuda
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
 
-	source ~/.bashrcs
 
-3. Install cuDNN - 8.9
+source ~/.bashrcs
+```
+
+4. Install cuDNN - 8.9
 	https://developer.nvidia.com/rdp/cudnn-download
-	
-	sudo dpkg -i cudnn.deb
+```
+sudo dpkg -i cudnn.deb
+```
 
 Done
 
