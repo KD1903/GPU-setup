@@ -42,6 +42,14 @@ Tested on,
 
 Done
 
+### Test all installations
+```
+nvcc -V
+```
+```
+nvidia-smi
+```
+
 reference: https://medium.com/geekculture/deep-learning-gpu-setup-from-scratch-75f730c49c01
 
 ---
