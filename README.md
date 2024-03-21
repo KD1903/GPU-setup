@@ -18,20 +18,20 @@ Tested on,
 	https://developer.nvidia.com/cuda-downloads
 	
 	set path in ~/.bashrc
-```
-export PATH=$PATH:/usr/local/cuda/bin
-export CUDADIR=/usr/local/cuda
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
-
-
-source ~/.bashrcs
-```
+	```
+	export PATH=$PATH:/usr/local/cuda/bin
+	export CUDADIR=/usr/local/cuda
+	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
+	
+	
+	source ~/.bashrcs
+	```
 
 4. Install cuDNN - 8.9
 	https://developer.nvidia.com/rdp/cudnn-download
-```
-sudo dpkg -i cudnn.deb
-```
+	```
+	sudo dpkg -i cudnn.deb
+	```
 
 Done
 
