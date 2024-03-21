@@ -18,12 +18,19 @@ Tested on,
 	https://developer.nvidia.com/cuda-downloads
 	
 	set path in ~/.bashrc
+	
+	```
+	sudo nano ~/.bashrc
+	```
+
+	Add this text at end of file
 	```
 	export PATH=$PATH:/usr/local/cuda/bin
 	export CUDADIR=/usr/local/cuda
 	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
-	
-	
+	```
+ 
+	```	
 	source ~/.bashrc
 	```
 
